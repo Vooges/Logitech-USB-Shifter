@@ -11,7 +11,7 @@ This project will allow you to use a Logitech G29/G920 shifter as a standalone U
 
 ## Wiring
 
-![Shifter to Arduino wiring](/images/wiring.png)
+![Shifter to Arduino wiring](/logitech_shifter_usb/images/wiring.png)
 
 ## Setup
 
