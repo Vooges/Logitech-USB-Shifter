@@ -1,27 +1,27 @@
 #include <Joystick.h>
 
 //H-pattern gear values
-const int NEUTRAL = 0;
-const int FIRST = 1;
-const int SECOND = 2;
-const int THIRD = 3;
-const int FOURTH = 4;
-const int FIFTH = 5;
-const int SIXTH = 6;
-const int REVERSE = 8;
+#define NEUTRAL 0
+#define FIRST 1
+#define SECOND 2
+#define THIRD 3
+#define FOURTH 4
+#define FIFTH 5
+#define SIXTH 6
+#define REVERSE 8
 
 //H-pattern y-axis values
-const int Y_UPPER = 720;
-const int Y_LOWER = 250;
+#define Y_UPPER 720
+#define Y_LOWER 250
 
 //H-pattern x-axis values
-const int X_LEFT = 390;
-const int X_RIGHT = 700;
+#define X_LEFT 390
+#define X_RIGHT 700
 
 //Pin values
-const int xPin = A0;
-const int yPin = A2;
-const int buttonPin = 2;
+#define xPin A0
+#define yPin A2
+#define buttonPin 2
 
 Joystick_ shifter;
 
