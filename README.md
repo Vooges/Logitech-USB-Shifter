@@ -1,7 +1,5 @@
 # Logitech Driving Force Shifter USB Adapter
 
-This project will allow you to use a Logitech G29/G920 shifter as a standalone USB device.
-
 ## Prerequisites
 
 * Logitech Driving Force Shifter (Used with G29, G920, and G923 steering wheels)
