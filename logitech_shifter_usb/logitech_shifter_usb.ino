@@ -15,8 +15,8 @@
 #define Y_LOWER 250
 
 //H-pattern x-axis values
-#define X_LEFT 390
-#define X_RIGHT 700
+#define X_LEFT 390 //increase this when the shifter reports being in 3rd or 4th gear whilst the actual shifter is in 1st or 2nd
+#define X_RIGHT 650 //lower this when the shifter reports being in 3rd or 4th gear whilst the actual shifter is in 5th or 6th
 
 //Pin values
 #define xPin A0
@@ -45,7 +45,7 @@ void shift(){
   int y = analogRead(yPin);
   int reverse = digitalRead(buttonPin);
 
-  int newGear = -1;
+  int newGear = NEUTRAL;
 
   if(y >= Y_UPPER){
     if(x <= X_LEFT) newGear = FIRST;
@@ -58,8 +58,6 @@ void shift(){
       if(!reverse) newGear = SIXTH;
       if(reverse) newGear = REVERSE;
     }
-  } else {
-    newGear = NEUTRAL;
   }
 
   if(currentGear != newGear){
